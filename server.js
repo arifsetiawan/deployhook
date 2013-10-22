@@ -24,8 +24,6 @@ app.get(config.rootPath, function(req, res) {
 app.get(config.rootPath + '/deploy/hook', function(req, res) { deploy.getHook(req, res); });
 
 // set this url in POST hook setting in your repository
-// Note that our app has basic auth in it. So your POST hook url should be like
-// https://YOURNAME:YOURPASSWORD@YOURSERVER:PORT/helper/v1/deploy/hook
 app.post(config.rootPath + '/deploy/hook', function(req, res) { deploy.postHook(req, res); });
 
 app.listen(config.port);
