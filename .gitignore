@@ -1,0 +1,3 @@
+server.js.logs
+*.tmp
+node_modules
