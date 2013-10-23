@@ -34,7 +34,7 @@ If you see function `deploy` in [`deploy.js`](https://github.com/arifsetiawan/de
 I also include sample payload in function `getHook` in [`deploy.js`](https://github.com/arifsetiawan/deployhook/blob/master/lib/deploy.js). You can create your own custom deployment suitable for your needs and use POST body accordingly
 
 ### Public repository use
-This code is intended for private repository as it's using SSH key. If you have public repo, uncomment line 79 in [`deploy.js`](https://github.com/arifsetiawan/deployhook/blob/master/lib/deploy.js) to use `git pull origin master` directly.
+This code is intended for private repository as it's using SSH key. If you have public repository you can skip SSH config settings.
 
 ### License
 MIT
